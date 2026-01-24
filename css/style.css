@@ -1,68 +1,15 @@
+/* ===== GLOBAL ===== */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f8f3ef;
+  color: #000;
 }
 
-.navbar {
-  background: #000;
-  color: gold;
-  padding: 15px;
-}
-
-.navbar ul {
-  display: flex;
-  list-style: none;
-}
-
-.navbar a {
-  color: gold;
-  margin: 10px;
+a {
   text-decoration: none;
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #000;
-  color: gold;
-}
-.hero {
-  padding: 80px 20px;
-  text-align: center;
-  background: linear-gradient(135deg, #f8f3ef, #efe2d8);
-}
-
-.hero h2 {
-  font-size: 32px;
-  margin-bottom: 30px;
-}
-
-.cta a {
-  background: gold;
-  color: black;
-  padding: 14px 24px;
-  margin: 10px;
-  display: inline-block;
-  border-radius: 30px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.cta a:hover {
-  background: #d4af37;
-}
-
-section h3 {
-  text-align: center;
-  margin-top: 60px;
-  font-size: 26px;
-}
-
-section p {
-  text-align: center;
-  font-size: 18px;
-}
 /* ===== NAVBAR ===== */
 .navbar {
   background: #000;
@@ -86,21 +33,125 @@ section p {
 
 .nav-links a {
   color: gold;
-  text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
-/* Hover menu */
 .nav-links a:hover {
   color: #fff;
 }
 
-/* Menu mobile */
 .menu-toggle {
   display: none;
   font-size: 26px;
   cursor: pointer;
+  color: gold;
+}
+
+/* ===== HERO ===== */
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #f8f3ef, #efe2d8);
+}
+
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.hero-img {
+  max-width: 90%;
+  height: auto;
+  margin: 30px auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.cta {
+  margin-top: 20px;
+}
+
+.cta a {
+  background: gold;
+  color: black;
+  padding: 14px 24px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.cta a:hover {
+  background: #d4af37;
+}
+
+/* ===== SECTIONS ===== */
+section h3 {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 26px;
+}
+
+section p {
+  text-align: center;
+  font-size: 18px;
+  max-width: 700px;
+  margin: 10px auto 40px auto;
+}
+
+/* ===== BOOKING FORM ===== */
+.booking {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.booking form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.booking input,
+.booking textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  resize: vertical;
+}
+
+.booking button {
+  background: black;
+  color: gold;
+  border: none;
+  padding: 14px;
+  margin-top: 10px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.booking button:hover {
+  background: #333;
+}
+
+.note {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
   color: gold;
 }
 
@@ -124,5 +175,16 @@ section p {
   .menu-toggle {
     display: block;
   }
+
+  .hero h2 {
+    font-size: 26px;
+  }
+
+  .cta a {
+    padding: 12px 20px;
+    margin: 8px;
+    font-size: 14px;
+  }
 }
+
 
