@@ -6,8 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
+<!-- ===== HEADER / NAVBAR ===== -->
 <header class="navbar">
   <div class="logo">Beauty Luxe</div>
 
@@ -21,17 +23,20 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
 
-    <!-- Bouton menu mobile -->
-    <div class="menu-toggle" id="menu-toggle">
-      ☰
-    </div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
   </nav>
 </header>
 
-
+<!-- ===== MAIN ===== -->
 <main>
+
+  <!-- HERO SECTION -->
   <section class="hero">
     <h2>Sacs élégants, perruques de qualité & coiffures professionnelles</h2>
+
+    <!-- IMAGE (OBLIGATOIRE POUR LE VISUEL) -->
+    <img src="images/hero.jpg" alt="Beauty Luxe sacs et perruques" class="hero-img">
+
     <div class="cta">
       <a href="bags.html">Acheter les sacs</a>
       <a href="wigs.html">Acheter les perruques</a>
@@ -39,14 +44,37 @@
     </div>
   </section>
 
-  <section>
+  <!-- WHY US -->
+  <section class="why">
     <h3>Pourquoi nous choisir ?</h3>
     <p>Élégance • Qualité • Professionnalisme</p>
   </section>
+
+  <!-- BOOKING / EMAIL FORM -->
+  <section class="booking">
+    <h3>Réserver un rendez-vous</h3>
+
+    <!-- FORMULAIRE EMAIL (FORMSpree) -->
+    <!-- Remplace XXXXX par ton ID Formspree -->
+    <form action="https://formspree.io/f/XXXXX" method="POST">
+      <input type="text" name="name" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre email" required>
+      <textarea name="message" placeholder="Votre demande (date, service...)"></textarea>
+      <button type="submit">Envoyer la demande</button>
+    </form>
+
+    <p class="note">
+      📩 Vous recevrez une confirmation par email après l’envoi.
+    </p>
+  </section>
+
 </main>
 
-<footer>...</footer>
-<script src="js/script.js"></script>
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <p>© 2026 Beauty Luxe — Tous droits réservés</p>
+</footer>
 
+<script src="js/script.js"></script>
 </body>
 </html>
