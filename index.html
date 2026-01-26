@@ -51,21 +51,23 @@
   </section>
 
   <!-- BOOKING / EMAIL FORM -->
-  <section class="booking">
-    <h3>Réserver un rendez-vous</h3>
+ <section class="booking">
+  <h3>Réserver un rendez-vous</h3>
 
-    <!-- FORMULAIRE EMAIL (FORMSpree) -->
-    <form action="https://formspree.io/f/mojdwzzk" method="POST">
-      <input type="text" name="name" placeholder="Votre nom" required>
-      <input type="email" name="email" placeholder="Votre email" required>
-      <textarea name="message" placeholder="Votre demande (date, service...)"></textarea>
-      <button type="submit">Envoyer la demande</button>
-    </form>
+  <form action="https://formspree.io/f/mojdwzzk" method="POST">
+    <input type="text" name="name" placeholder="Votre nom" required>
+    <input type="email" name="email" placeholder="Votre email" required>
+    <textarea name="message" placeholder="Votre demande (date, service...)" required></textarea>
 
-    <p class="note">
-      📩 Vous recevrez une confirmation par email après l’envoi.
-    </p>
-  </section>
+    <input type="hidden" name="_subject" value="Nouvelle demande Canvabags & BraidsWigs">
+
+    <button type="submit">Envoyer la demande</button>
+  </form>
+
+  <p class="note">
+    📩 Vous recevrez une confirmation par email après l’envoi.
+  </p>
+</section>
 
 </main>
 
