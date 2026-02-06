@@ -39,6 +39,11 @@ a {
 .nav-links a:hover {
   color: white;
 }
+.hero-img {
+  max-width: 70%;   /* au lieu de 90% */
+  height: auto;
+}
+
 
 /* ===== SHOP SECTION ===== */
 .shop-section {
