@@ -161,7 +161,7 @@ footer {
   border-radius: 16px;
 }
 
-/* MOBILE — TRÈS IMPORTANT */
+/* MOBILE */
 @media (max-width: 768px) {
   .hero-img {
     max-width: 300px 
@@ -169,7 +169,7 @@ footer {
 
   .product-card img,
   .hair-card img {
-    height: 180px 
+    height: 80px 
   }
 }
 
