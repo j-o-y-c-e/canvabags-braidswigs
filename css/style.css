@@ -80,12 +80,6 @@ a {
   transform: translateY(-8px);
 }
 
-.product-card img {
-  width: 100%;
-  height: 100px;
-  object-fit: cover;
-}
-
 /* ===== PRODUCT INFO ===== */
 .product-info {
   padding: 20px;
@@ -136,16 +130,50 @@ footer {
     font-size: 16px;
   }
 
-  .hair-card img {
-    height: 80px;
-  }
-  /* ===== HERO IMAGE (PAGE ACCUEIL) ===== */
+  /* ==================================================
+    TAILLES IMAGES — HERO / SACS / PERRUQUES
+   ================================================== */
+
+/* HERO */
 .hero-img {
-  max-width: 400px;   
   width: 100%;
+  max-width: 380px 
   height: auto;
+  margin: 20px auto;
   display: block;
-  margin: 30px auto;
+  border-radius: 18px;
 }
+
+/* PRODUITS : SACS & PERRUQUES */
+.product-card img {
+  width: 100% 
+  max-width: 100% 
+  height: 200px 
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* COIFFURES (RÉSERVATION) */
+.hair-card img {
+  width: 100% 
+  height: 220px 
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* MOBILE — TRÈS IMPORTANT */
+@media (max-width: 768px) {
+  .hero-img {
+    max-width: 300px 
+  }
+
+  .product-card img,
+  .hair-card img {
+    height: 180px 
+  }
+}
+
+
+
 
 }
