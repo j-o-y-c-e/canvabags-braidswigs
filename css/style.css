@@ -81,7 +81,7 @@ a {
 }
 
 .product-card img {
-  width: 50%;
+  width: 150%;
   height: 80px;
   object-fit: cover;
 }
@@ -142,7 +142,7 @@ footer {
   /* ===== HERO IMAGE (PAGE ACCUEIL) ===== */
 .hero-img {
   max-width: 400px;   
-  width: 80%;
+  width: 180%;
   height: auto;
   display: block;
   margin: 30px auto;
