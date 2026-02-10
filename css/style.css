@@ -33,152 +33,111 @@ a {
 
 .nav-links a {
   color: gold;
-  font-weight: 500;
 }
 
-.nav-links a:hover {
-  color: white;
-}
-
-/* ===== SHOP SECTION ===== */
-.shop-section {
-  padding: 60px 30px;
-}
-
-.shop-title {
+/* ===== HERO ===== */
+.hero {
+  background: #000;
   text-align: center;
-  font-size: 30px;
-  margin-bottom: 10px;
+  padding: 40px 20px;
 }
 
-.shop-subtitle {
-  text-align: center;
-  color: #555;
-  margin-bottom: 50px;
-  font-size: 18px;
+.hero h2 {
+  color: gold;
 }
 
-/* ===== PRODUCT GRID ===== */
-.product-grid {
+.hero-img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  border-radius: 16px;
+}
+
+/* ===== SHOP ===== */
+.shop {
+  padding: 50px 20px;
+}
+
+.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
   margin: auto;
 }
 
 /* ===== PRODUCT CARD ===== */
 .product-card {
-  background: #fff;
-  border-radius: 20px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
   overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease;
+  text-align: center;
 }
 
-.product-card:hover {
-  transform: translateY(-8px);
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  cursor: pointer;
 }
 
 /* ===== PRODUCT INFO ===== */
-.product-info {
-  padding: 20px;
-  text-align: center;
+.product-card h4 {
+  margin: 12px 0 5px;
 }
 
-.product-info h4 {
-  font-size: 20px;
-  margin-bottom: 8px;
-}
-
-.product-price {
-  font-size: 28px;
-  font-weight: bold;
+.price {
+  font-size: 22px;
   color: #d4af37;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
-.product-info a {
-  background: black;
-  color: gold;
-  padding: 10px 22px;
-  border-radius: 25px;
-  font-weight: bold;
-  display: inline-block;
+/* ===== INSTAGRAM ICON ===== */
+.instagram-link img {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin-right: 6px;
 }
 
-.product-info a:hover {
-  background: #333;
+/* ===== LIGHTBOX ===== */
+#lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
 }
 
-/* ===== FOOTER ===== */
-footer {
-  background: #000;
-  color: gold;
-  text-align: center;
-  padding: 20px;
-  margin-top: 60px;
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
-  .shop-title {
-    font-size: 24px;
-  }
-
-  .shop-subtitle {
-    font-size: 16px;
-  }
-
-  /* ==================================================
-    TAILLES IMAGES — HERO / SACS / PERRUQUES
-   ================================================== */
-
-/* HERO */
-.hero-img {
-  width: 100%;
-  max-width: 380px 
-  height: 300px;
-  margin: 20px auto;
-  display: block;
-  border-radius: 18px;
+#close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
 }
 
-/* PRODUITS : SACS & PERRUQUES */
-.product-card img {
-  width: 100% 
-  max-width: 100% 
-  height: 40px 
-  object-fit: cover;
-  border-radius: 16px;
-}
-
-/* COIFFURES (RÉSERVATION) */
-.hair-card img {
-  width: 100% 
-  height: 80px 
-  object-fit: cover;
-  border-radius: 16px;
-}
-
-/* MOBILE */
+/* ===== MOBILE ===== */
 @media (max-width: 768px) {
   .hero-img {
-    max-width: 300px 
+    max-width: 260px;
   }
 
-  .product-card img,
-  .hair-card img {
-    height: 80px 
+  .product-card img {
+    height: 180px;
   }
 }
-.instagram-link img {
-  width: 12px;
-  height: 12px;
-}
 
 
-
-
-
-}
