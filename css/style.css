@@ -203,7 +203,7 @@ section p {
 }
 hair-card img {
   width: 100%;
-  height: 260px;
+  height: 360px;
   object-fit: cover;
   cursor: zoom-in;
   transition: transform 0.3s ease;
@@ -281,5 +281,8 @@ hair-card img {
 
   .product-card img {
     height: 280px;
+  }
+  .hair-card img {
+    height: 320px;
   }
 }
