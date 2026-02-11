@@ -201,6 +201,13 @@ section p {
   cursor: zoom-in;
   transition: transform 0.3s ease;
 }
+hair-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
 
 .product-card img:hover {
   transform: scale(1.05);
@@ -273,6 +280,6 @@ section p {
   }
 
   .product-card img {
-    height: 220px;
+    height: 280px;
   }
 }
