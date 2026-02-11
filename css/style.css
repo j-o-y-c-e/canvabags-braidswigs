@@ -77,14 +77,15 @@ a {
 }
 
 .product-card img {
-  width: 100%;
-  height: 250px;
+  width: 100% 
+  max-width: 100% 
+  height: 40px
   object-fit: cover;
   cursor: pointer;
   border-radius: 16px;
 }
 /* COIFFURES (RÉSERVATION) */ 
-.hair-card img { width: 100% height: 280px object-fit: cover; border-radius: 16px; }
+.hair-card img { width: 100% height: 80px object-fit: cover; border-radius: 16px; }
 
 /* ===== PRODUCT INFO ===== */
 .product-card h4 {
