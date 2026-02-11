@@ -285,4 +285,14 @@ hair-card img {
   .hair-card img {
     height: 420px;
   }
+   /* ===============================
+   WIGS –
+================================ */
+.wig-card img {
+  height: auto;
+  max-height: 380px;
+  object-fit: contain;
+  background: #fff;
+}
+
 }
